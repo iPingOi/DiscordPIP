@@ -1,0 +1,32 @@
+{
+  "name": "Discord PIP",
+  "version": "0.0.1",
+  "description": "The best extension for enable PIP in Discord. Try It's Free.",
+  "manifest_version": 3,
+  "author": "PingO",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Discord PIP"
+  },
+  "icons": {
+    "16": "/extension/images/icon-16.png",
+    "32": "/extension/images/icon-32.png",
+    "64": "/extension/images/icon-64.png",
+    "120": "/extension/images/icon-120.png",
+    "240": "/extension/images/icon-240.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://discord.com/channels/@me/*"
+      ],
+      "js": [
+        "/extension/js/load.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "activeTab"
+  ]
+}
