@@ -1,2 +1,2 @@
 # DiscordPIP
-The best extension to enable PIP in Discord. Try It's Free.
+The best extension to enable PIP in Discord. Try it, It's Free.
